@@ -37,8 +37,8 @@ const options = {  //об'єкт параметрів (необов'язкови
       
       function handleTimerBtnClick () {
         const intervalId = setInterval(() => {
-            timer = deltaTime -= 1000; // таймер на зменшення в мс
-            output = convertMs(timer); // таймер на зменшення в формі об'єкта
+            const timer = deltaTime -= 1000; // таймер на зменшення в мс
+            const output = convertMs(timer); // таймер на зменшення в формі об'єкта
 
             if (timer <= 1000) {
                 clearInterval(intervalId);
